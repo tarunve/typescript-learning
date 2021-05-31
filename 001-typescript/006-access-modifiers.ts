@@ -27,10 +27,10 @@ class AccessModifier{
     }
 }
 
-var a : AccessModifier = new AccessModifier("ABC", "DEF");
-console.log(a.getVar1());
-console.log(a.getVar2());
+var access : AccessModifier = new AccessModifier("ABC", "DEF");
+console.log(access.getVar1());
+console.log(access.getVar2());
 
 // readonly var
-console.log(a.var3);
+console.log(access.var3);
 // a.var3 = "hduhd"; // error since it is readonly property
