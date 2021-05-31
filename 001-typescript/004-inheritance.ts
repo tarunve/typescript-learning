@@ -1,6 +1,11 @@
 class Person{
     firstName : string;
-    lastName : string;
+    lastName : string ;
+
+    constructor(first : string, last: string){
+        this.firstName = first;
+        this.lastName = last;
+    }
 
     greet(){
         console.log("Hey There !!!");
@@ -20,11 +25,11 @@ class Programmer extends Person{
 
 }
 
-var programmer = new Programmer();
+var programmer = new Programmer("Tarun", "Verma");
 programmer.greet();
 programmer.greetLikeNormalPeople();
 
 // Polymorphism
-var programmer2 : Person = new Programmer();
+var programmer2 : Person = new Programmer("Deepak", "Kumar");
 programmer2.greet();
 //programmer2.greetLikeNormalPeople(); // method not available since reference is from parent class

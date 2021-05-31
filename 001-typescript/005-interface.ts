@@ -9,13 +9,19 @@ interface PersonIntf{
 class PersonImpl implements PersonIntf{
     firstName: string;
     lastName: string;
+
+    constructor(first : string, last: string){
+        this.firstName = first;
+        this.lastName = last;
+    }
+
     getName(): string {
         return this.firstName + " " + this.lastName;
     }
 }
 
 //Duck Typing
-let aPerson : PersonIntf = new PersonImpl();
+let aPerson : PersonIntf = new PersonImpl("arun", "verma");
 
 let someObj = {
     firstName : "Test",
