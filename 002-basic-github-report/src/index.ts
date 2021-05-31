@@ -6,11 +6,11 @@ import * as _ from 'lodash';
 let svc = new GitHubApiService();
 // Separate Calls
 /*
-svc.getUserInfo('koushikkothagal', (user : User) => {
+svc.getUserInfo('tarunve', (user : User) => {
     console.log(user);
 });
 
-svc.getRepos('koushikkothagal', (repos : Repo[]) => {
+svc.getRepos('tarunve', (repos : Repo[]) => {
     console.log(repos);
 });
 */
