@@ -1,9 +1,7 @@
 function echo<T>(arg : T) : T{
     return arg;
 }
-
 var myStr = echo(1);
-
 
 // Generics with classes
 class Employee{
@@ -35,3 +33,6 @@ function employeeEcho<T extends Employee>(employee : T){
 var adm = employeeEcho(admin);      // We get Admin type because of generics
 var man = employeeEcho(manager);    // We get Manager type
 var emp = employeeEcho(employee);   // We get Employee type
+console.log(adm.getName());
+console.log(man.getName());
+console.log(emp.getName());
