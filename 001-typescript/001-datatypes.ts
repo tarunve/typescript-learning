@@ -20,7 +20,7 @@ var arr1 : number[];
 arr1 = [];
 arr1 = [1, 2 ,3];
 arr1.push(10);
-b = arr1.pop();
+let d = arr1.pop();
 //arr1 = ['Tarun']; // error for string
 
 // tuple - if we want to create array with different data types
